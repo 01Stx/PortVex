@@ -77,6 +77,25 @@ Os arquivos presentes podem variar conforme a evolução do projeto. O arquivo d
 
 Projeto desenvolvido para praticar Python, modularização, diagnóstico de rede, tratamento de erros, manipulação de arquivos e testes automatizados.
 
+## Como executar
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/01Stx/Scan_System.git
+   ```
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd Scan_System
+   ```
+
+3. Execute o arquivo principal do projeto:
+
+   ```bash
+   python Scan_System.py
+   ```
 ## Melhorias futuras
 
 - Interface gráfica com Tkinter.
@@ -88,3 +107,6 @@ Projeto desenvolvido para praticar Python, modularização, diagnóstico de rede
 ## Autor
 
 Estudante de Técnico em Informática, com interesse em suporte técnico, redes de computadores, Python e segurança da informação.
+
+
+
