@@ -120,34 +120,35 @@ def informacoes_rede():
     except OSError as erro:
         print(f"Erro ao consultar rede: {erro}")
 
+
 def calculadora():
     print("\n===== CALCULADORA =====")
 
-    numero1 = float(input("Digite o primeiro número: "))
-    operador = input("Digite a operação (+, -, *, /): ")
-    numero2 = float(input("Digite o segundo número: "))
+    try:
+        numero1 = float(input("Digite o primeiro número: ").replace(",", "."))
+        operador = input("Digite a operação (+, -, *, /): ").strip()
+        numero2 = float(input("Digite o segundo número: ").replace(",", "."))
+
+    except ValueError:
+        print("\nEntrada inválida! Digite números válidos.")
+        return
 
     if operador == "+":
         resultado = numero1 + numero2
-
     elif operador == "-":
         resultado = numero1 - numero2
-
     elif operador == "*":
         resultado = numero1 * numero2
-
     elif operador == "/":
         if numero2 == 0:
             print("\nNão é possível dividir por zero!")
             return
-
         resultado = numero1 / numero2
-
     else:
         print("\nOperação inválida!")
         return
 
-    print(f"\nResultado: {resultado}")
+    print(f"\nResultado: {resultado:g}")
 
 def registrar_log(mensagem):
     horario = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
