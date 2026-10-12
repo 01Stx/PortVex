@@ -1,4 +1,5 @@
 from sys import platform
+from calculator import calcular
 from system import diagnostico_sistema # type: ignore
 from network import (
     mostrar_ip_local,
@@ -120,7 +121,6 @@ def informacoes_rede():
     except OSError as erro:
         print(f"Erro ao consultar rede: {erro}")
 
-
 def calculadora():
     print("\n===== CALCULADORA =====")
 
@@ -129,26 +129,15 @@ def calculadora():
         operador = input("Digite a operação (+, -, *, /): ").strip()
         numero2 = float(input("Digite o segundo número: ").replace(",", "."))
 
-    except ValueError:
-        print("\nEntrada inválida! Digite números válidos.")
-        return
+        resultado = calcular(numero1, operador, numero2)
+        print(f"\nResultado: {resultado:g}")
 
-    if operador == "+":
-        resultado = numero1 + numero2
-    elif operador == "-":
-        resultado = numero1 - numero2
-    elif operador == "*":
-        resultado = numero1 * numero2
-    elif operador == "/":
-        if numero2 == 0:
-            print("\nNão é possível dividir por zero!")
-            return
-        resultado = numero1 / numero2
-    else:
-        print("\nOperação inválida!")
-        return
+    except ValueError as erro:
+        print(f"\nEntrada ou operação inválida: {erro}")
 
-    print(f"\nResultado: {resultado:g}")
+    except ZeroDivisionError:
+        print("\nNão é possível dividir por zero!")
+
 
 def registrar_log(mensagem):
     horario = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
