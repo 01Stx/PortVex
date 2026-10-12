@@ -1,14 +1,14 @@
-
 import os
 import platform
 import getpass
 
 
 def diagnostico_sistema():
-    print("\n===== DIAGNOSTICO DO SISTEMA =====")
+    """Exibe informações básicas do sistema operacional."""
+    print("\n===== DIAGNÓSTICO DO SISTEMA =====")
     print(f"Computador: {platform.node()}")
-    print(f"Usuario: {getpass.getuser()}")
-    print(f"Sistema: {platform.system()}")
-    print(f"Versao: {platform.version()}")
+    print(f"Usuário: {getpass.getuser()}")
+    print(f"Sistema operacional: {platform.system()}")
+    print(f"Versão do sistema: {platform.version()}")
     print(f"Arquitetura: {platform.architecture()[0]}")
-    print(f"Diretorio atual: {os.getcwd()}")
+    print(f"Diretório atual: {os.getcwd()}")
