@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+portscan.log
+relatorio_scan_system.txt
+.venv/
+.env
