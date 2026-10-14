@@ -1,4 +1,4 @@
-# Scan_System
+# PortVex
 
 Ferramenta de diagnóstico de computadores e redes desenvolvida em Python, com foco em aprendizado de programação, suporte técnico e fundamentos de redes.
 
@@ -55,7 +55,7 @@ python -m unittest -v test_network.py
 ## Estrutura do projeto
 
 ```text
-Scan_System/
+PortVex/
 ├── main.py
 ├── network.py
 ├── system.py
@@ -82,19 +82,19 @@ Projeto desenvolvido para praticar Python, modularização, diagnóstico de rede
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/01Stx/Scan_System.git
+   git clone https://github.com/01Stx/PortVex.git
    ```
 
 2. Entre na pasta do projeto:
 
    ```bash
-   cd Scan_System
+   cd PortVex
    ```
 
 3. Execute o arquivo principal do projeto:
 
    ```bash
-   python Scan_System.py
+   python PortVex.py
    ```
 ## Melhorias futuras
 
