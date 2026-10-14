@@ -39,7 +39,7 @@ Ferramenta de diagnóstico de computadores e redes desenvolvida em Python, com f
 3. Execute o programa principal:
 
    ```bash
-   python main.py
+   python PortVex.py
    ```
 
 4. Escolha uma opção no menu interativo.
