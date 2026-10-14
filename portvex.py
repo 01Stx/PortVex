@@ -44,7 +44,7 @@ def gerar_relatorio():
 
     relatorio = f"""
 ========================================
-       SCAN_SYSTEM - RELATÓRIO
+       PortVex - RELATÓRIO
 ========================================
 
 Data e hora: {horario}
@@ -62,7 +62,7 @@ Conectividade: {conexao}
 
     caminho = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
-        "relatorio_scan_system.txt"
+        "relatorio_PortVex.txt"
     )
 
     with open(caminho, "w", encoding="utf-8") as arquivo:
@@ -167,9 +167,9 @@ def mostrar_logs():
         print(linha.strip())
 
 while True:
-    print("\nWelcome to Scan_System!")
+    print("\nWelcome to PortVex!")
     print("------------------")
-    print("    Scan_System    ")
+    print("    PortVex    ")
     print("------------------\n")
 
     print("[1] Informações do computador")
@@ -249,7 +249,7 @@ while True:
 
     elif opcao == "13":
         registrar_log("Programa encerrado")
-        print("\nEncerrando o Scan_System...")
+        print("\nEncerrando o PortVex...")
         break
 
     else:

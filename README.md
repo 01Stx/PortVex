@@ -56,7 +56,7 @@ python -m unittest -v test_network.py
 
 ```text
 PortVex/
-├── main.py
+├── PortVex.py
 ├── network.py
 ├── system.py
 ├── test_network.py
@@ -107,6 +107,3 @@ Projeto desenvolvido para praticar Python, modularização, diagnóstico de rede
 ## Autor
 
 Estudante de Técnico em Informática, com interesse em suporte técnico, redes de computadores, Python e segurança da informação.
-
-
-
